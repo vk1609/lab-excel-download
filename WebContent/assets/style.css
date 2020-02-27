@@ -1,5 +1,5 @@
 body {
-	background: #535353;
+	background: #3e3e3e;
 }
 .start{
 	display:flex;
@@ -18,7 +18,8 @@ body {
 	font-size: 48px;
 	line-height: 65px;
 	position: absolute;
-	
+	color:white;
+	    margin: 0px 0px 0px 180px;
 }
 
 .para {
@@ -29,6 +30,8 @@ body {
 	font-size: 18px;
 	line-height: 25px;
 	position: absolute;
+	color:white;
+	    margin: 0px 0px 0px 180px;
 }
 
 .starts{
@@ -112,13 +115,15 @@ body {
 	color: #828282;
 }
 
-.star-cb-group {
-	/* remove inline-block whitespace */
+
+
+/* .star-cb-group {
+	remove inline-block whitespace
 	font-size: 0;
-	/* flip the order so we can use the + and ~ combinators */
+	flip the order so we can use the + and ~ combinators
 	unicode-bidi: bidi-override;
 	direction: rtl;
-	/* the hidden clearer */
+	the hidden clearer
 }
 
 .star-cb-group * {
@@ -134,7 +139,7 @@ body {
 }
 
 .star-cb-group>input+label {
-	/* only enough room for the star */
+	only enough room for the star
 	display: inline-block;
 	overflow: hidden;
 	text-indent: 9999px;
@@ -181,7 +186,7 @@ body {
 	color: #e52;
 	text-shadow: 0 0 1px #333;
 }
-
+ */
 :root {
 	font-size: 2em;
 	font-family: Helvetica, arial, sans-serif;
@@ -195,6 +200,57 @@ fieldset {
 	margin: 1em auto;
 }
 
+.star-rating{
+	display:flex;
+	flex-direction: row-reverse;
+	position: absolute;
+    top: 575px;
+	margin: 0px 0px 0px 180px;
+	background: #252628;
+	border: 0.5px solid #828282;
+	box-sizing: border-box;
+	border-radius: 4px;
+	  margin-top: 40px;
+  border: none;
+  float: left;
+}
+
+
+.star-rating {
+  margin-top: 40px;
+  border: none;
+  float: left;
+}
+
+.star-rating > label {
+  color: #90A0A3;
+  float: right;
+}
+
+.star-rating > label:before {
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  content: "\f005";
+  display: inline-block;
+}
+
+.star-rating > input {
+  display: none;
+}
+
+.star-rating > input:checked ~ label,
+.star-rating:not(:checked) > label:hover,
+.star-rating:not(:checked) > label:hover ~ label {
+  color: #F79426;
+}
+
+.star-rating > input:checked + label:hover,
+.star-rating > input:checked ~ label:hover,
+.star-rating > label:hover ~ input:checked ~ label,
+.star-rating > input:checked ~ label:hover ~ label {
+  color: #FECE31;
+}
 .rating{
 	display:flex;
 	flex-direction: row;
@@ -205,6 +261,7 @@ fieldset {
 	box-sizing: border-box;
 	border-radius: 4px;
 }
+
 .re1 {	
 	position: absolute;
 	left: 192px;	

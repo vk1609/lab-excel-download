@@ -20,19 +20,19 @@ public class TestPrograd {
 		pro.setName("Ravi");
 		pro.setId("065");
 		pro.setRate("4");
-		pro.setRecommand("Likely");
+		pro.setRecommend("Likely");
 		pro.setComment("No comments");
 		assertEquals(name,pro.getName());
 		assertEquals(id,pro.getId());
 		assertEquals(rate,pro.getRate());
-		assertEquals(recommand,pro.getRecommand());
+		assertEquals(recommand,pro.getRecommend());
 		assertEquals(comment,pro.getComment());
 		
 		try {
 			pro.setName(null);
 			pro.setId(null);
 			pro.setRate(null);
-			pro.setRecommand(null);
+			pro.setRecommend(null);
 			pro.setComment(null);
 		}
 		

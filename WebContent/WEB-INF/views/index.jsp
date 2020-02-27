@@ -8,12 +8,13 @@ pageEncoding="ISO-8859-1"%>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <link rel="stylesheet" href="./assets/style.css" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Prograd Details</title>
 </head>
-
+	
 <body>
 <body>
-		<form action=""${pageContext.request.contextPath}/prograd" method="post" id="myForm">
+		<form action="${pageContext.request.contextPath}/prograd" method="post" id="myForm">
 		<div>
 			<div class="start">
 				<h1 class = "heading">Share Your Experience With Us</h1>
@@ -26,34 +27,38 @@ pageEncoding="ISO-8859-1"%>
 				<label class = "id">Your ProGrad Id</label>
 			</div>
 			<div class= "inputs">
-				<input type = "text" class = "nametext" id = "name" name = "name">
-				<input type = "text" class = "idtext" id = "id" name = "id">
+				<input type = "text" class = "nametext" id = "name" name = "name" required>
+				<input type = "text" class = "idtext" id = "id" name = "id" required>
 			</div>
 			<div>
 				<h3 class = "experience">Rate Your Experience</h3><br>
-				<p class = "experienceQuestion">How would you rate your experience with us so far?</p><br>
-				<div class = "rate">
-				<fieldset>
-    				<span class="star-cb-group">
-						<input type="radio" id="rating-5" name="rating5" id="rating5" value="5" class = "r5"/><label for="rating-5"></label>
-						<input type="radio" id="rating-4" name="rating4" id="rating4" value="4" class = "r"  /><label for="rating-4"></label>
-						<input type="radio" id="rating-3" name="rating3" id="rating3" value="3" class = "r" /><label for="rating-3"></label>
-						<input type="radio" id="rating-2" name="rating2" id="rating2" value="2" class = "r" /><label for="rating-2"></label>
-						<input type="radio" id="rating-1" name="rating1" id="rating1" value="1" class = "r1" checked="checked"/><label for="rating-1"></label>
-						<input type="radio" id="rating-0" name="rating0" id="rating0" value="0" class="star-cb-clear" /><label for="rating-0"></label>
-    				</span>
-				</fieldset>
+				<p class = "experienceQuestion">How would you rate your experience with us so far?</p>
+			
+<div class="star-rating">
+  <input type="radio" id="star5" name="rating" value="5" />
+  <label class="star" for="star5" title="Awesome" aria-hidden="true"></label>
+  <input type="radio" id="star4" name="rating" value="4" />
+  <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+  <input type="radio" id="star3" name="rating" value="3" />
+  <label class="star" for="star3" title="Very good" aria-hidden="true"></label>
+  <input type="radio" id="star2" name="rating" value="2" />
+  <label class="star" for="star2" title="Good" aria-hidden="true"></label>
+  <input type="radio" id="star1" name="rating" value="1" />
+  <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
+</div>
+					
+    			
 				</div>
 				
 			</div>
 			
   				<p class ="suggestion" id="recommand">How likely is that you would recommend ProGrad to a friend/junior/colleague?</p><br>
   				<div class = "rating">
-  				<input type ="button" class = "re1" onclick = "button1()" value = "1" id = "re1" name = "re1">
-  				<input type ="button" class = "re2" onclick = "button2()" value = "2" id = "re2" name = "re2">
-  				<input type ="button" class = "re3" onclick = "button3()" value = "3" id = "re3" name = "re3">
-  				<input type ="button" class = "re4" onclick = "button4()" value = "4" id = "re4" name = "re4">
-  				<input type ="button" class = "re5" onclick = "button5()" value = "5" id = "re5" name = "re5">
+  				<input type ="button" class = "re1" value = "1" id = "re1" name = "re1">
+  				<input type ="button" class = "re2" value = "2" id = "re2" name = "re2">
+  				<input type ="button" class = "re3" value = "3" id = "re3" name = "re3">
+  				<input type ="button" class = "re4" value = "4" id = "re4" name = "re4">
+  				<input type ="button" class = "re5" value = "5" id = "re5" name = "re5">
   				</div>	
   				<p class = "like" id = "unlike">Very Unlikely</p>
 				<p class = "like" id = "like">Very Likely</p>
@@ -66,5 +71,5 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 		</form>
 </body>
-<script type="text/javascript" src="./script/script.js"></script>
+
 </html>

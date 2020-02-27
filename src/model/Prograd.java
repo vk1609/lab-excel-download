@@ -1,18 +1,21 @@
 package model;
 
+
+
 public class Prograd {
 	private String name;
 	private String id;
 	private String rate;
 	private String comment;
-	private String recommand;
-	public Prograd(String name, String id, String rate, String comment, String recommand) {
+	private String recommend;
+	
+	public Prograd(String name, String id, String rate, String comment, String recommend) {
 		super();
 		this.name = name;
 		this.id = id;
 		this.rate = rate;
 		this.comment = comment;
-		this.recommand = recommand;
+		this.recommend = recommend;
 	}
 	public String getName() {
 		return name;
@@ -38,13 +41,10 @@ public class Prograd {
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
-	public String getRecommand() {
-		return recommand;
+	public String getRecommend() {
+		return recommend;
 	}
-	public void setRecommand(String recommand) {
-		this.recommand = recommand;
-	}
-	
-	
-	
+	public void setRecommend(String recommand) {
+		this.recommend = recommand;
+	}	
 }
