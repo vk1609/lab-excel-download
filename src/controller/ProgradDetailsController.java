@@ -16,8 +16,6 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-//import model.Prograd;
-//import service.ExcelGenerator;
 
 @WebServlet(urlPatterns = { "/prograd" })
 public class ProgradDetailsController extends HttpServlet {
@@ -27,7 +25,6 @@ public class ProgradDetailsController extends HttpServlet {
 	RequestDispatcher rd;
 	public ProgradDetailsController() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
