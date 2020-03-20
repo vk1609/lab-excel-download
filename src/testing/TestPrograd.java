@@ -7,17 +7,17 @@ import model.Prograd;
 import static org.junit.Assert.*;
 
 public class TestPrograd {
-	Prograd pro = new Prograd ("Ravi","065","4","Likely","No comments");
+	Prograd pro = new Prograd ("John","065","4","Likely","No comments");
 	
 	@Test
 	public void testSetMethods() {
-		Prograd pro = new Prograd ("Ravi","065","4","Likely","No comments");
-		String name = "Ravi";
+		Prograd pro = new Prograd ("John","065","4","Likely","No comments");
+		String name = "John";
 		String id = "065";
 		String rate = "4";
 		String recommand = "Likely";
 		String comment = "No comments";
-		pro.setName("Ravi");
+		pro.setName("John");
 		pro.setId("065");
 		pro.setRate("4");
 		pro.setRecommend("Likely");
